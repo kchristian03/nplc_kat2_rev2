@@ -23,6 +23,9 @@ $uri = 'leaderboard';
 
                 </div>
             </div>
+            <div class="my-5">
+            @livewire('leaderboard')
+        </div>
         </div>
     </div>
 @endsection

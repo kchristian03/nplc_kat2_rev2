@@ -29,8 +29,5 @@
             @endforeach
         </div>
     </div>
-
-    <a class="btn btn-primary" href="/gamestart">Game Start</a>
-    <a class="btn btn-danger" href="/gamestop">Game Stop</a>
 </div>
 @endsection

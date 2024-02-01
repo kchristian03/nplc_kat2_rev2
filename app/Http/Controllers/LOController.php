@@ -37,10 +37,10 @@ class LOController extends Controller
         $globalTimer = GlobalTimer::orderBy('id', 'desc')->first();
 
         if (empty($globalTimer)) {
-            if ($lo->hasRole(['LO Puzzle Pos 1|LO Puzzle Pos 2a|LO Puzzle Pos 2b|LO Puzzle Pos 3a|LO Puzzle Pos 3b|LO Puzzle Pos 4a|LO Puzzle Pos 4b|LO Puzzle Pos 5'])) {
-                return view('dashboard.lo_puzzle.gamestart');
-            }elseif ($lo->hasRole(['LO Rally Pos 1|LO Rally Pos 2|LO Rally Pos 3|LO Rally Pos 4|LO Rally Pos 5|LO Rally Pos 6|LO Rally Pos 7|LO Rally Pos 8|LO Rally Pos 9|LO Rally Pos 10|LO Rally Pos 11|LO Rally Pos 12|LO Rally Pos 13|LO Rally Pos 14|LO Rally Pos 15|LO Rally Pos 16|LO Rally Pos 17|LO Rally Pos 18'])) {
-                return view('dashboard.lo_rally.gamestart');
+            if ($lo->hasRole(['Admin'])) {
+                return view('dashboard.commitee.global_timer.gamestart');
+            }elseif ($lo->hasRole(['Super Admin'])) {
+                return view('dashboard.commitee.global_timer.gamestart');
             }else{
                 return redirect('/');
             }
@@ -55,10 +55,10 @@ class LOController extends Controller
         $globalTimer = GlobalTimer::orderBy('id', 'desc')->first();
 
         if (!empty($globalTimer)) {
-            if ($lo->hasRole(['LO Puzzle Pos 1|LO Puzzle Pos 2a|LO Puzzle Pos 2b|LO Puzzle Pos 3a|LO Puzzle Pos 3b|LO Puzzle Pos 4a|LO Puzzle Pos 4b|LO Puzzle Pos 5'])) {
-                return view('dashboard.lo_puzzle.gamestop');
-            }elseif ($lo->hasRole(['LO Rally Pos 1|LO Rally Pos 2|LO Rally Pos 3|LO Rally Pos 4|LO Rally Pos 5|LO Rally Pos 6|LO Rally Pos 7|LO Rally Pos 8|LO Rally Pos 9|LO Rally Pos 10|LO Rally Pos 11|LO Rally Pos 12|LO Rally Pos 13|LO Rally Pos 14|LO Rally Pos 15|LO Rally Pos 16|LO Rally Pos 17|LO Rally Pos 18'])) {
-                return view('dashboard.lo_rally.gamestop');
+            if ($lo->hasRole(['Admin'])) {
+                return view('dashboard.committee.global_timer.gamestop');
+            }elseif ($lo->hasRole(['Super Admin'])) {
+                return view('dashboard.committee.global_timer.gamestop');
             }else{
                 return redirect('/');
             }

@@ -18,7 +18,7 @@ Broadcast::channel('App.Models.User.{id}', function ($user, $id) {
 });
 
 Broadcast::channel('myPrivateChannel.user.{id}', function($user,$id){
-    return $user->id == $id;
+return $user->id == $id;
 });
 
 Broadcast::channel('StartPuzzle.user.{userId}', function ($user,$userId){
@@ -49,8 +49,8 @@ Broadcast::channel('Forfit.user.{userId}', function($user,$userId){
     return (int) $user->id === (int) $userId;
 });
 
-Broadcast::channel('SpecialItem.user.{userId}', function($user,$userId){
-    return (int) $user->id === (int) $userId;
+Broadcast::channel('SpecialItem.user.{userId}', function ($user, $userId) {
+    return true;
 });
 
 Broadcast::channel('globaltimer', function () {

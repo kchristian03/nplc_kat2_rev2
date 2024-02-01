@@ -121,6 +121,9 @@ Route::middleware([
 
     Route::get('/gamestart',[LOController::class,'globalTimer']);
     Route::get('/gamestop',[LOController::class,'globalTimerStop']);
+    Route::get('/leaderboard', function () {
+        return view('dashboard.committee.leaderboard.index');
+    });
 
     userRoute();
     itemRoute();

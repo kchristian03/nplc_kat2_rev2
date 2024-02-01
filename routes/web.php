@@ -119,11 +119,11 @@ Route::middleware([
     'role:Super Admin|Admin|Committee',
 ])->group(function () {
 
-    Route::get('/gamestart',[LOController::class,'globalTimer']);
-    Route::get('/gamestop',[LOController::class,'globalTimerStop']);
+    Route::get('/gamestart',[LOController::class,'globalTimer'])->name('gamestart');
+    Route::get('/gamestop',[LOController::class,'globalTimerStop'])->name('gamestop');
     Route::get('/leaderboard', function () {
         return view('dashboard.committee.leaderboard.index');
-    });
+    })->name('leaderboard');;
 
     userRoute();
     itemRoute();

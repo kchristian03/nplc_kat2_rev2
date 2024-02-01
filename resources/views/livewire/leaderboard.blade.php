@@ -7,8 +7,8 @@
     <h2 class="w-full text-slate-900 text-center font-semibold">Leaderboard</h2>
     </div>
     <div class="relative overflow-x-auto rounded">
-        <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+        <table class="w-full text-sm text-left rtl:text-right text-gray-500">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50">
                 <tr>
                     <th scope="col" class="px-6 py-3">
                         Rank
@@ -24,7 +24,7 @@
             <tbody>
                 @foreach ($teams as $index => $team)
                 <tr class="bg-white">
-                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap">
                         {{ $index+1 }}
                     </th>
                     <td class="px-6 py-4">

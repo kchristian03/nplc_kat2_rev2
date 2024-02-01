@@ -2,10 +2,12 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use App\Models\Team;
+use App\Models\Puzzle;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class PlayingPuzzle extends Model
 {
@@ -16,7 +18,7 @@ class PlayingPuzzle extends Model
         'id'
     ];
 
-    protected $table = [
+    protected $fillable = [
         'team_id',
         'puzzle_id',
         'duration',

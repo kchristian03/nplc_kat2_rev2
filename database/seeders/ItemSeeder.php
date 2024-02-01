@@ -21,7 +21,7 @@ class ItemSeeder extends Seeder
                 'description' => 'Doubles your experience points for 15 minutes.',
                 'duration' => 15,
                 'price' => 30,
-                'image_path' => 'doublexp15.png',
+                'image_path' => 'items/doublexp15.png',
             ],
             [
                 'code' => '2EXP30',
@@ -29,7 +29,7 @@ class ItemSeeder extends Seeder
                 'description' => 'Doubles your experience points for 30 minutes.',
                 'duration' => 30,
                 'price' => 45,
-                'image_path' => 'doublexp30.png',
+                'image_path' => 'items/doublexp30.png',
             ],
             [
                 'code' => 'HINT',
@@ -37,7 +37,7 @@ class ItemSeeder extends Seeder
                 'description' => 'Provides a hint for a specific puzzle. Can be used once.',
                 'duration' => 1,
                 'price' => 200,
-                'image_path' => 'hint.png',
+                'image_path' => 'items/hint.png',
             ],
             [
                 'code' => '2COIN15',
@@ -45,7 +45,7 @@ class ItemSeeder extends Seeder
                 'description' => 'Doubles your earned coins for 15 minutes.',
                 'duration' => 15,
                 'price' => 30,
-                'image_path' => 'doublecoin15.png',
+                'image_path' => 'items/doublecoin15.png',
             ],
             [
                 'code' => '2COIN30',
@@ -53,7 +53,7 @@ class ItemSeeder extends Seeder
                 'description' => 'Doubles your earned coins for 30 minutes.',
                 'duration' => 30,
                 'price' => 45,
-                'image_path' => 'doublecoin30.png',
+                'image_path' => 'items/doublecoin30.png',
             ],
             [
                 'code' => 'JB',
@@ -61,7 +61,7 @@ class ItemSeeder extends Seeder
                 'description' => 'Allows you to escape from security bots or monsters once.',
                 'duration' => 1,
                 'price' => 30,
-                'image_path' => 'jailbreakpass.png',
+                'image_path' => 'items/jailbreakpass.png',
             ],
             [
                 'code' => 'KC',
@@ -69,7 +69,7 @@ class ItemSeeder extends Seeder
                 'description' => 'Unlocks specific puzzle.',
                 'duration' => 9999999,
                 'price' => 50,
-                'image_path' => 'keycardpass.png',
+                'image_path' => 'items/keycardpass.png',
             ],
         ];
 

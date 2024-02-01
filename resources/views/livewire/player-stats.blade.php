@@ -1,11 +1,11 @@
 <div class="w-full grid grid-col-1">
 <div class="card m-10 bg-gradient-to-br from-gray-600 to-gray-500 rounded drop-shadow-md">
-    <div class=" m-2 block max-w-full p-4 bg-sky-500/90 rounded shadow dark:bg-sky-500/90">
+    <div class=" m-2 block max-w-full p-4 bg-sky-500/90 rounded shadow">
 
-        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-100 dark:text-gray-700">{{ $teamData->name}}</h5>
-        <p class="font-normal text-gray-100 dark:text-gray-700">Coin: {{ $teamData->coin }}</p>
-        <p class="font-normal text-gray-100 dark:text-gray-700">Exp: {{ $teamData->exp }}</p>
-        <p class="font-normal text-gray-100 dark:text-gray-700">score: {{ $teamData->score }}</p>
+        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-100 ">{{ $teamData->name}}</h5>
+        <p class="font-normal text-gray-100 ">Coin: {{ $teamData->coin }}</p>
+        <p class="font-normal text-gray-100 ">Exp: {{ $teamData->exp }}</p>
+        <p class="font-normal text-gray-100">score: {{ $teamData->score }}</p>
         <div class="flex justify-center gap-4 mt-2">
             @foreach($teamData->itemusage as $itemusage)
             @if($itemusage->code == "COIN")

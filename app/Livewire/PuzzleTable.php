@@ -14,6 +14,7 @@ use App\Models\BonusScore;
 use Livewire\Attributes\On;
 use App\Models\PlayingPuzzle;
 use App\Models\PuzzleCompletion;
+use Illuminate\Support\Facades\Log;
 
 class PuzzleTable extends Component
 {
@@ -40,6 +41,9 @@ class PuzzleTable extends Component
     public function render()
     {
         // $this->playingteams = $this->getSessionData();
+
+        Log::info("ini puzzle id");
+        Log::info($this->puzzleId);
         return view('livewire.puzzle-table',[
             'playingteams'=> PlayingPuzzle::where('puzzle_id',$this->puzzleId)->get()
         ]);

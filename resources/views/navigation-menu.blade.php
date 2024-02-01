@@ -109,7 +109,7 @@
                 </a>
             </li>
             <li>
-                <a href="{{route('dashboard')}}"
+                <a href="{{route('leaderboard')}}"
                    class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                          stroke="currentColor"
@@ -123,7 +123,7 @@
 
             @if(Auth::user()->hasRole('Super Admin|Admin'))
                 <li>
-                    <a href="{{route('dashboard')}}"
+                    <a href="{{route('gamestart')}}"
                        class="flex items-center p-2 text-gray-900 transition duration-75 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                              stroke="currentColor"

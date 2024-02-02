@@ -38,9 +38,9 @@ class LOController extends Controller
 
         if (empty($globalTimer)) {
             if ($lo->hasRole(['Admin'])) {
-                return view('dashboard.commitee.global_timer.gamestart');
+                return view('dashboard.committee.global_timer.gamestart');
             }elseif ($lo->hasRole(['Super Admin'])) {
-                return view('dashboard.commitee.global_timer.gamestart');
+                return view('dashboard.committee.global_timer.gamestart');
             }else{
                 return redirect('/');
             }
